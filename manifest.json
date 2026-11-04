@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Desbloquear y cargar cuaderno Séneca",
+  "version": "2.1",
+  "author": "Miguel Saiz-Pardo Hurtado",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "miguelsaizpardo565@gmail.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "description": "Desbloquea los cuadros de notas del cuaderno Séneca y, opcionalmente, inserta las notas que hay en el portapapeles. Las notas deben estar una por línea (cada línea un alumno). Se copia la misma nota a toda la fila de criterios. Las notas incorrectas (mayores de 10, menores de 1) aparecerán con un marco rojo. Las notas no se graban hasta que no se pulsa aceptar en Séneca, pero si hay alguna incorrecta, Séneca no emite ningún error, pero no las guardará.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+    },
+
+  "action": {
+    "default_icon": "icons/border-48.png",
+    "default_title": "Haz clic para desbloquear las notas del cuaderno Séneca. Si tienes notas en el portapapeles (una por línea), se insertarán en la fila de criterios (cada alumno recibirá la misma nota en todos los criterios)."
+  },
+  "permissions": [
+    "activeTab", "scripting","clipboardRead"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
