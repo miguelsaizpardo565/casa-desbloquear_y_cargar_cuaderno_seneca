@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Desbloquear y cargar cuaderno Séneca",
-  "version": "2.1",
+  "version": "2.2",
   "author": "Miguel Saiz-Pardo Hurtado",
 
   "browser_specific_settings": {

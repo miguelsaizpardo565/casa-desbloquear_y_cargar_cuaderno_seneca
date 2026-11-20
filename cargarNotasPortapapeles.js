@@ -20,6 +20,12 @@
                     numero = partes[0];
                 }
                 line = isNaN(numero) ? "" : numero.toFixed(2); // Formatear a dos decimales
+                if ( !isNaN(numero) && numero < 1 ) {
+                    line = "1";
+                }
+                if ( !isNaN(numero) && numero >= 10 ) {
+                    line = "10";
+                }
                 return line;
             });
             if ( confirm("En el portapapeles encuentro los siguientes datos numéricos. ¿Quieres cargarlos como notas?\n" +
